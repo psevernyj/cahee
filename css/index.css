@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 10px; }
+
+body {
+  padding: 1rem;
+  font-size: 1.6rem;
+  font-family: Raleway; }
+
+.header {
+  background-image: url("../img/header/header-bg.png");
+  background-position: center;
+  background-color: #f9f8fb;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .header .logo {
+    font-family: Pacifico;
+    font-size: 5rem;
+    color: #262626;
+    transition: all .5s; }
+  .header .logo:hover {
+    transform: scale(1.5); }
+  .header .header-nav {
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row; }
+    .header .header-nav ul li {
+      list-style-type: none;
+      display: inline;
+      padding-right: 4rem; }
+      .header .header-nav ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.6rem;
+        color: #262626;
+        padding-top: 1rem;
+        transition: all .4s; }
+      .header .header-nav ul li a:hover {
+        border-top: 2px solid #ff6033;
+        transform: scale(2); }
+  .header .header-content {
+    position: absolute;
+    top: 403px;
+    left: 280px; }
+    .header .header-content h2 {
+      font-family: Raleway;
+      color: #262626;
+      font-weight: 900;
+      font-size: 6rem; }
+    .header .header-content p {
+      width: 40%;
+      font-weight: lighter;
+      font-size: 1.7rem;
+      color: #262626;
+      padding: 4rem 0; }
+    .header .header-content .button {
+      border: 2px solid #ff6033;
+      background-color: #ff6033;
+      border-radius: 3px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #f9f8fb;
+      padding: 1rem 2rem;
+      transition: all .3s; }
+    .header .header-content .button:hover {
+      border: 2px solid #96b92c;
+      background-color: #96b92c; }
+  .header .scroll {
+    position: absolute;
+    bottom: 69px;
+    left: 50%; }
