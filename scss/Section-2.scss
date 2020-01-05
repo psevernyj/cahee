@@ -22,13 +22,14 @@
         align-items: center;
         flex-direction: row;
         margin-bottom: 2rem;
+        transition: all .5s;
 
         a {
           width: 300px;
           padding-left: 3rem;
           text-align: center;
           text-decoration: none;
-          font-size: 2rem;
+          font-size: 1.8rem;
           font-weight: bold;
           color: #262626;
         }
@@ -41,6 +42,15 @@
           top: 0px;
           padding: 17px;
           border-left: 1px solid #9d9d9d;
+
+        }
+      }
+      li:hover{
+        background-color:#e6ed76;
+        color: #f9f8fb;
+        transform: scale(1.1) translateX(2rem);
+        & img{
+          border-left: 1px solid #f9f8fb;
 
         }
       }
