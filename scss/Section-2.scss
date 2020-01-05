@@ -1,0 +1,32 @@
+.section-2 {
+  background-color: #70bfff;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+
+  .section-2-nav {
+    a{
+      text-decoration: none;
+      border: 1px solid #262626;
+      background-color: #f9f8fb;
+      padding: 2rem 5rem;
+
+      span{
+
+        color: #262626;
+
+      }
+      span:after{
+        content: url("../img/section-2/bagg.png");
+        border-left: 1px solid #262626;
+
+      }
+
+
+    }
+
+
+
+
+  }
+}
