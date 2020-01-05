@@ -3,30 +3,67 @@
   background-size: cover;
   width: 100%;
   height: 90vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
   .section-2-nav {
-    a{
-      text-decoration: none;
-      border: 1px solid #262626;
-      background-color: #f9f8fb;
-      padding: 2rem 5rem;
+    ul {
 
-      span{
+      li {
+        width: 40rem;
+        height: 8rem;
+        border: 1px solid #f9f8fb;
+        background-color: #f9f8fb;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 2rem;
 
-        color: #262626;
+        a {
+          width: 300px;
+          padding-left: 3rem;
+          text-align: center;
+          text-decoration: none;
+          font-size: 2rem;
+          font-weight: bold;
+          color: #262626;
+        }
 
+        & img {
+          width: 8rem;
+          height: 8rem;
+          right: 2px;
+          position: absolute;
+          top: 0px;
+          padding: 17px;
+          border-left: 1px solid #9d9d9d;
+
+        }
       }
-      span:after{
-        content: url("../img/section-2/bagg.png");
-        border-left: 1px solid #262626;
+    }
+  }
 
-      }
+  .section-2-pic {
+    width: 60rem;
+    position: relative;
+    margin-left: -30rem;
 
 
+    h1 {
+      font-size: 8rem;
+      font-weight: bold;
+      color: #f9f8fb;
+      position: absolute;
+      top: 21rem;
+      z-index: 200;
     }
 
-
-
-
+    img {
+      z-index: 100;
+    }
   }
 }
