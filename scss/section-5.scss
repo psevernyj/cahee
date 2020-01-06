@@ -44,12 +44,14 @@
         position: absolute;
         top: 20px;
         left: 20px;
+        transition: all .5s;
       }
       h4{
         width: 80%;
         position: absolute;
         top: 227px;
         left: 20px;
+        transition: all .5s;
       }
       h5{
         font-size: 1rem;
@@ -62,17 +64,25 @@
     }
     .pic:hover{
       transform: scale(1.1);
+      h3{
+        transform: translateX(2rem);
+      }
+      h4{
+        transform: scale(1.1);
+      }
     }
 
     .first{
-      background-image: url("../img/section-5/apples.png");
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.85)), url("../img/section-5/apples.png");
+
+
     }
     .second{
-      background-image: url("../img/section-5/peas.png");
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.85)), url("../img/section-5/peas.png");
       margin: 0 3rem;
     }
     .third{
-      background-image: url("../img/section-5/raspberries.png");
+      background-image: linear-gradient(to right bottom, rgba(255, 255, 255, 0.4), rgba(0, 0, 0, 0.85)), url("../img/section-5/raspberries.png");
       box-shadow:0 0 10px rgba(0,0,0,0.5);
     }
   }
