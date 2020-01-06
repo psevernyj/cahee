@@ -1,0 +1,100 @@
+.section-5{
+  background-color: #b07cf7;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  position: relative;
+  .section-5-content{
+    text-align: center;
+    color: #f9f8fb;
+    h1{
+      font-size: 9rem;
+      font-weight: bold;
+      padding-top: 10rem;
+      }
+    p{
+      font-size: 1.7rem;
+      font-weight: lighter;
+      padding: 3rem 0;
+
+    }
+  }
+  .section-5-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-top:3rem;
+    color: #f9f8fb;
+
+    .pic{
+      width: 372px; height: 312px;
+      box-shadow:0 0 10px rgba(0,0,0,0.5);
+      position: relative;
+      transition: all .3s;
+
+      h3{
+        width: 5rem;
+        height: 5rem;
+        text-align: center;
+        background-color: #262626;
+        text-transform: uppercase;
+        border-radius: 4px;
+        opacity: 0.6;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+      }
+      h4{
+        width: 80%;
+        position: absolute;
+        top: 227px;
+        left: 20px;
+      }
+      h5{
+        font-size: 1rem;
+        font-weight: lighter;
+        position: absolute;
+        top: 285px;
+        left: 20px;
+
+      }
+    }
+    .pic:hover{
+      transform: scale(1.1);
+    }
+
+    .first{
+      background-image: url("../img/section-5/apples.png");
+    }
+    .second{
+      background-image: url("../img/section-5/peas.png");
+      margin: 0 3rem;
+    }
+    .third{
+      background-image: url("../img/section-5/raspberries.png");
+      box-shadow:0 0 10px rgba(0,0,0,0.5);
+    }
+  }
+  .section-5-button{
+    position: absolute;
+    bottom: 100px;
+    left: 47%;
+    .button {
+      border: 2px solid #f72b3b;
+      background-color: #f72b3b;
+      border-radius: 3px;
+      box-shadow:0 0 10px rgba(0,0,0,0.5);
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #f9f8fb;
+      padding: 1rem 2rem;
+      transition: all .3s;
+    }
+    .button:hover{
+      border: 2px solid #e6ed76;
+      background-color: #e6ed76;
+      color: #262626;
+    }
+  }
+}
