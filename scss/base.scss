@@ -37,7 +37,8 @@ body {
     color: #262626;
     transition: all .5s;
   }
-  .logo:hover{
+
+  .logo:hover {
     transform: scale(1.5);
   }
 
@@ -49,7 +50,7 @@ body {
     flex-direction: row;
 
 
-    ul {
+    .main-menu {
 
 
       li {
@@ -74,6 +75,42 @@ body {
         }
 
 
+      }
+    }
+
+    .mobile-menu {
+      width: 30px;
+      border-bottom: 1px solid #262626;
+      position: relative;
+      display: none;
+
+      &:before {
+        content: "";
+        position: absolute;
+        width: 30px;
+        border-bottom: 1px solid #262626;
+        top: -10px;
+
+      }
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 30px;
+        border-bottom: 1px solid #262626;
+        top: 10px;
+      }
+
+    }
+
+    @media only screen and (max-width: 800px) {
+      .mobile-menu {
+        display: inline-block;
+        margin-top: 18px;
+
+      }
+      .main-menu {
+        display: none;
       }
     }
   }
@@ -104,20 +141,22 @@ body {
       border: 2px solid #ff6033;
       background-color: #ff6033;
       border-radius: 3px;
-      box-shadow:0 0 10px rgba(0,0,0,0.5);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
       text-transform: uppercase;
       text-decoration: none;
       color: #f9f8fb;
       padding: 1rem 2rem;
       transition: all .3s;
     }
-    .button:hover{
+
+    .button:hover {
       border: 2px solid #96b92c;
       background-color: #96b92c;
     }
   }
-  .scroll{
-   position: absolute;
+
+  .scroll {
+    position: absolute;
     bottom: 69px;
     left: 50%;
 
